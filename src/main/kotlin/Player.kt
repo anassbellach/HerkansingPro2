@@ -1,2 +1,2 @@
-class Player(val name: String, var health: Int = 3) {
+class Player(val name: String, var health: Int = 100) {
 }

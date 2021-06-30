@@ -12,7 +12,6 @@ open class Enemy(val name: String, var health: Int, var state: EnemyState) {
             if (health == 0) {
                 state = EnemyState.DEAD
             } else {
-                health -= 1
                 health -= damage % health
                 println("$name heeft $damage damage gekregen zijn health is nu $health.")
             }
